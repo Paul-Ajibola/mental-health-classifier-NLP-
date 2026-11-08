@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = Path(os.environ.get("MODEL_PATH", BASE_DIR / "models" / "text_classifier.joblib"))
 MAX_TEXT_LENGTH = 10_000
 
+
 app = FastAPI(
     title="Mental Health Text Classifier",
     description="Research demonstration only; not a diagnostic or crisis-response tool.",
