@@ -5,7 +5,7 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Mental Health Text Classifier", page_icon="🧠", layout="centered")
-backend_url = os.environ.get("BACKEND_URL", "http://127.0.0.1:8000").rstrip("/")
+backend_url = os.environ.get("BACKEND_URL", "https://mental-health-classifier-nlp-1.onrender.com").rstrip("/")
 
 st.title("🧠 Mental Health Text Classifier")
 st.warning(
@@ -61,4 +61,4 @@ if st.button("Analyze text", type="primary"):
             st.error(f"Could not process the backend response: {exc}")
 
 st.divider()
-st.caption("This research demo does not store text itself; your hosting and network setup may log requests.")
+st.caption("NLP Project (Paul Ajibola).")
